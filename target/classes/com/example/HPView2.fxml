@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane prefHeight="527.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.HPCharacterController">
+    <children>
+   
+        <!-- Adicione a ComboBox para selecionar personagens -->
+        <ComboBox fx:id="characterComboBox" layoutX="291.0" layoutY="76.0" onAction="#handleCharacterSelection" promptText="Selecione um personagem">
+            <effect>
+                <Glow />
+            </effect>
+        </ComboBox>
+   
+        <TextField fx:id="searchTextField" layoutX="89.0" layoutY="76.0" onAction="#handleSearchAction" prefHeight="25.0" prefWidth="192.0" promptText="Digite aqui para pesquisar">
+            <font>
+                <Font name="Century Gothic" size="12.0" />
+            </font>
+        </TextField>
+   
+        <!-- Adicione o ImageView para exibir a imagem do personagem -->
+        <ImageView fx:id="characterImageView" fitHeight="203.0" fitWidth="173.0" layoutX="45.0" layoutY="154.0">
+            <image>
+                <Image url="@logo.png" />
+            </image>
+        </ImageView>
+        <VBox layoutX="246.0" layoutY="126.0" prefHeight="263.0" prefWidth="368.0" style="-fx-background-color: #301B1B;">
+            <effect>
+                <ImageInput />
+            </effect>
+        </VBox>
+   
+        <Label layoutX="264.0" layoutY="148.0" text="Name:">
+            <font>
+                <Font name="Britannic Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="nameLabel" layoutX="355.0" layoutY="148.0" prefHeight="8.0" prefWidth="192.0" />
+   
+        <Label layoutX="264.0" layoutY="200.0" text="Species:">
+            <font>
+                <Font name="Britannic Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="speciesLabel" layoutX="348.0" layoutY="201.0" prefHeight="8.0" prefWidth="182.0" />
+   
+        <Label layoutX="264.0" layoutY="247.0" text="Gender:">
+            <font>
+                <Font name="Britannic Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="genderLabel" layoutX="353.0" layoutY="242.0" prefHeight="25.0" prefWidth="182.0" />
+   
+        <Label layoutX="266.0" layoutY="293.0" text="House:">
+            <font>
+                <Font name="Britannic Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="houseLabel" layoutX="353.0" layoutY="289.0" prefHeight="25.0" prefWidth="192.0" />
+   
+        <Label layoutX="263.0" layoutY="338.0" text="Date of Birth:">
+            <font>
+                <Font name="Britannic Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="dobLabel" layoutX="382.0" layoutY="338.0" prefHeight="17.0" prefWidth="153.0" />
+      
+        <Label layoutX="263.0" layoutY="388.0" text="Actor:">
+            <font>
+                <Font name="Britannic Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="actorLabel" layoutX="353.0" layoutY="389.0" prefHeight="25.0" prefWidth="192.0" />
+   
+        <Label layoutX="263.0" layoutY="438.0" text="Patronus:">
+            <font>
+                <Font name="Britannic Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="patronusLabel" layoutX="353.0" layoutY="439.0" prefHeight="25.0" prefWidth="192.0" />
+    </children>
+    <effect>
+        <Glow />
+    </effect>
+</Pane>

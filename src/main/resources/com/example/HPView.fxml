@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.Controller.HPCharacterController"
+      spacing="10">
+
+    <TextField fx:id="searchTextField" onAction="#handleSearchAction" promptText="Digite aqui para pesquisar"/>
+
+    <!-- Adicione a ComboBox para selecionar personagens -->
+    <ComboBox fx:id="characterComboBox" onAction="#handleCharacterSelection" promptText="Selecione um personagem"/>
+
+    <!-- Adicione o ImageView para exibir a imagem do personagem -->
+    <ImageView fx:id="characterImageView" fitWidth="200" fitHeight="200"/>
+
+    <Label text="Name:"/>
+    <Label fx:id="nameLabel"/>
+
+    <Label text="Species:"/>
+    <Label fx:id="speciesLabel"/>
+
+    <Label text="Gender:"/>
+    <Label fx:id="genderLabel"/>
+
+    <Label text="House:"/>
+    <Label fx:id="houseLabel"/>
+
+    <Label text="Date of Birth:"/>
+    <Label fx:id="dobLabel"/>
+
+    <!-- Adicione os campos restantes conforme necessário -->
+
+</VBox>

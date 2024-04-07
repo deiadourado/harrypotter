@@ -1,0 +1,68 @@
+/* Style for the background of the application */
+.root {
+    -fx-background-image: url('bg.png'); /* Path to your background image */
+    -fx-background-size: cover; /* Adjusts the size of the image to cover the entire container */
+    -fx-background-repeat: no-repeat; /* Prevents the background image from being repeated */
+    -fx-background-position: center; /* Centers the background image */
+}
+
+/* Style for the text of labels */
+.label {
+    -fx-text-fill: #D3A625; /* Golden color for text */
+    -fx-font-family: "Britannic Bold", "Century Gothic", sans-serif; /* Font family for labels */
+    -fx-font-size: 18px; /* Font size for labels */
+}
+
+/* Style for the text of text fields */
+.text-field {
+    -fx-font-family: "Century Gothic", sans-serif; /* Font family for text fields */
+    -fx-font-size: 12px; /* Font size for text fields */
+    -fx-text-fill: #D3A625; /* Golden color for text */
+}
+
+/* Style for ComboBox */
+.combo-box {
+    -fx-font-family: "Century Gothic", sans-serif; /* Font family for ComboBox */
+    -fx-font-size: 12px; /* Font size for ComboBox */
+}
+
+/* Style for ComboBox items */
+.combo-box .list-cell {
+    -fx-font-family: "Century Gothic", sans-serif; /* Font family for ComboBox items */
+    -fx-font-size: 12px; /* Font size for ComboBox items */
+}
+
+/* Style for the background of ComboBox */
+.combo-box .combo-box-base {
+    -fx-background-color: #301B1B; /* Wood color for ComboBox background */
+}
+
+/* Style for the text of selected items in ComboBox */
+.combo-box .text {
+    -fx-text-fill: #D3A625; /* Golden color for text */
+}
+
+/* Style for the background of search box */
+.text-field {
+    -fx-background-color: #301B1B; /* Wood color for search box background */
+}
+
+/* Style for the text of search box */
+.text-field .text {
+    -fx-text-fill: #D3A625; /* Golden color for text */
+}
+
+/* Style for the cursor in search box */
+.text-field .text-caret {
+    -fx-background-color: #D3A625; /* Golden color for cursor */
+}
+
+/* Style for the background of search button */
+.text-field .search-icon {
+    -fx-background-color: #D3A625; /* Golden color for search button background */
+}
+
+/* Style for the text of search button */
+.text-field .search-icon .icon {
+    -fx-text-fill: #D3A625; /* Golden color for text */
+}
